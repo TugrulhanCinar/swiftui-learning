@@ -10,7 +10,30 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
-        sampleView1()
+        part3View()
+    }
+
+    fileprivate func part3View() -> some View {
+        return VStack {
+            // 10 a kadar elemanları gruplamanı sağlıyor
+            // MARK: Login view
+            Group {
+                VStack {
+                    Image(systemName: "pencil").tint(.red)
+                    Text("Hello")
+                        .foregroundColor(Color.red)
+                        .font(.title2)
+                        .opacity(0.3)
+                }
+            }.frame(width: 200, height: 200, alignment: .center).background(Color("color_random"))
+            // MARK: Register View
+            VStack {
+                Text("Hello")
+                    .accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+
+            }
+        }
     }
 
     fileprivate func sampleView1() -> some View {
