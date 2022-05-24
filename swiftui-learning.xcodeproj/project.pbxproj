@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		767411EFCD8771CFA760572E /* Pods_swiftui_learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D60BD23301ED337A770273 /* Pods_swiftui_learning.framework */; };
 		9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A040A283CBECD00148686 /* swiftui_learningApp.swift */; };
 		9A2A040D283CBECD00148686 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A040C283CBECD00148686 /* ContentView.swift */; };
 		9A2A040F283CBED000148686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2A040E283CBED000148686 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59955DA8A3A6210EFC84435F /* Pods-swiftui-learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-learning.release.xcconfig"; path = "Target Support Files/Pods-swiftui-learning/Pods-swiftui-learning.release.xcconfig"; sourceTree = "<group>"; };
+		68D60BD23301ED337A770273 /* Pods_swiftui_learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2A0407283CBECD00148686 /* swiftui-learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2A040A283CBECD00148686 /* swiftui_learningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_learningApp.swift; sourceTree = "<group>"; };
 		9A2A040C283CBECD00148686 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		9A2A0411283CBED000148686 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A2A041D283CFDCA00148686 /* CircleTextImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImage.swift; sourceTree = "<group>"; };
 		9A2A0420283D054200148686 /* SampleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleList.swift; sourceTree = "<group>"; };
+		C7FB295F55644F5107E49099 /* Pods-swiftui-learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-learning.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-learning/Pods-swiftui-learning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2A041A283CFA9100148686 /* Kingfisher in Frameworks */,
+				767411EFCD8771CFA760572E /* Pods_swiftui_learning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311ABCD68A190E70198873B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB295F55644F5107E49099 /* Pods-swiftui-learning.debug.xcconfig */,
+				59955DA8A3A6210EFC84435F /* Pods-swiftui-learning.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9A2A03FE283CBECD00148686 = {
 			isa = PBXGroup;
 			children = (
 				9A2A0409283CBECD00148686 /* swiftui-learning */,
 				9A2A0408283CBECD00148686 /* Products */,
+				311ABCD68A190E70198873B4 /* Pods */,
+				B81C1C350CDD18A36CA96653 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +116,14 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		B81C1C350CDD18A36CA96653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68D60BD23301ED337A770273 /* Pods_swiftui_learning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A2A0415283CBED000148686 /* Build configuration list for PBXNativeTarget "swiftui-learning" */;
 			buildPhases = (
+				9E6DF3F707F0007AE91BB50C /* [CP] Check Pods Manifest.lock */,
 				9A2A0403283CBECD00148686 /* Sources */,
 				9A2A0404283CBECD00148686 /* Frameworks */,
 				9A2A0405283CBECD00148686 /* Resources */,
@@ -147,7 +173,7 @@
 			);
 			mainGroup = 9A2A03FE283CBECD00148686;
 			packageReferences = (
-				9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 			);
 			productRefGroup = 9A2A0408283CBECD00148686 /* Products */;
 			projectDirPath = "";
@@ -169,6 +195,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E6DF3F707F0007AE91BB50C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftui-learning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A2A0403283CBECD00148686 /* Sources */ = {
@@ -301,6 +352,7 @@
 		};
 		9A2A0416283CBED000148686 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FB295F55644F5107E49099 /* Pods-swiftui-learning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +381,7 @@
 		};
 		9A2A0417283CBED000148686 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59955DA8A3A6210EFC84435F /* Pods-swiftui-learning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,7 +432,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -392,7 +445,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		9A2A0419283CFA9100148686 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
