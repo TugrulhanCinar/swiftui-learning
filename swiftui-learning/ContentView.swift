@@ -24,8 +24,9 @@ struct IconFieldView: View {
 
 struct ContentView: View {
 
+    let imageUrl: String = "https://picsum.photos/id/237/200/300"
     var body: some View {
-        part3View()
+        CircleTextImage(title: "hello", imageUrl: imageUrl)
     }
 
     fileprivate func part3View() -> some View {
@@ -119,6 +120,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        IconFieldView()
+        ContentView()
     }
 }
