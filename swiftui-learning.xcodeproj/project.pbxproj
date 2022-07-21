@@ -18,6 +18,7 @@
 		9A50836A283D1BC0006C0793 /* NavigationUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A508369283D1BC0006C0793 /* NavigationUsers.swift */; };
 		9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836C283D1BD2006C0793 /* NavigationModel.swift */; };
 		9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836E283D297C006C0793 /* UserViewDetail.swift */; };
+		9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D0062889677A00DF2043 /* SampleViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9A508369283D1BC0006C0793 /* NavigationUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUsers.swift; sourceTree = "<group>"; };
 		9A50836C283D1BD2006C0793 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		9A50836E283D297C006C0793 /* UserViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDetail.swift; sourceTree = "<group>"; };
+		9AD8D0062889677A00DF2043 /* SampleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViews.swift; sourceTree = "<group>"; };
 		C7FB295F55644F5107E49099 /* Pods-swiftui-learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-learning.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-learning/Pods-swiftui-learning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9A2A041C283CFD7D00148686 /* Circle */,
+				9AD8D0062889677A00DF2043 /* SampleViews.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				9A50836A283D1BC0006C0793 /* NavigationUsers.swift in Sources */,
 				9A2A0421283D054200148686 /* SampleList.swift in Sources */,
 				9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */,
+				9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */,
 				9A2A041E283CFDCA00148686 /* CircleTextImage.swift in Sources */,
 				9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */,
 				9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */,
