@@ -23,6 +23,8 @@
 		9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D00B288969E000DF2043 /* AppleTutorials.swift */; };
 		9AD8D00E2889730000DF2043 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D00D2889730000DF2043 /* LabelledDivider.swift */; };
 		9AD8D0112889886200DF2043 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D0102889886200DF2043 /* CircleImage.swift */; };
+		9AD8D01328898D2500DF2043 /* Mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D01228898D2500DF2043 /* Mapview.swift */; };
+		9AD8D01528898E0F00DF2043 /* Step1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D01428898E0F00DF2043 /* Step1View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		9AD8D00B288969E000DF2043 /* AppleTutorials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTutorials.swift; sourceTree = "<group>"; };
 		9AD8D00D2889730000DF2043 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
 		9AD8D0102889886200DF2043 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		9AD8D01228898D2500DF2043 /* Mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapview.swift; sourceTree = "<group>"; };
+		9AD8D01428898E0F00DF2043 /* Step1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1View.swift; sourceTree = "<group>"; };
 		C7FB295F55644F5107E49099 /* Pods-swiftui-learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-learning.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-learning/Pods-swiftui-learning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,10 +169,20 @@
 		9AD8D00F2889885200DF2043 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9AD8D009288969CC00DF2043 /* CustomizeViews.swift */,
-				9AD8D0102889886200DF2043 /* CircleImage.swift */,
+				9AD8D0162889936A00DF2043 /* Step1 */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9AD8D0162889936A00DF2043 /* Step1 */ = {
+			isa = PBXGroup;
+			children = (
+				9AD8D009288969CC00DF2043 /* CustomizeViews.swift */,
+				9AD8D0102889886200DF2043 /* CircleImage.swift */,
+				9AD8D01228898D2500DF2043 /* Mapview.swift */,
+				9AD8D01428898E0F00DF2043 /* Step1View.swift */,
+			);
+			path = Step1;
 			sourceTree = "<group>";
 		};
 		B81C1C350CDD18A36CA96653 /* Frameworks */ = {
@@ -288,10 +302,12 @@
 				9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */,
 				9AD8D0112889886200DF2043 /* CircleImage.swift in Sources */,
 				9AD8D00E2889730000DF2043 /* LabelledDivider.swift in Sources */,
+				9AD8D01528898E0F00DF2043 /* Step1View.swift in Sources */,
 				9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */,
 				9A2A041E283CFDCA00148686 /* CircleTextImage.swift in Sources */,
 				9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */,
 				9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */,
+				9AD8D01328898D2500DF2043 /* Mapview.swift in Sources */,
 				9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,9 +16,9 @@ struct CircleImage: View {
         KFImage(URL(string: imageUrl))
             .clipShape(Circle())
             .overlay{
-                Circle().stroke(.cyan, lineWidth: 2)
+                Circle().stroke(.gray, lineWidth: 4)
             }
-            .shadow(radius: 3)
+            .shadow(radius: 7)
 
     }
 }
