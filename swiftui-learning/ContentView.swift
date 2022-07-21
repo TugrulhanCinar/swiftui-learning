@@ -22,15 +22,8 @@ struct IconFieldView: View {
     }
 }
 
-struct ContentView: View {
-
-    var body: some View {
-        SampleViews()
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AppleTutorials()
     }
 }

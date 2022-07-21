@@ -19,6 +19,8 @@
 		9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836C283D1BD2006C0793 /* NavigationModel.swift */; };
 		9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836E283D297C006C0793 /* UserViewDetail.swift */; };
 		9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D0062889677A00DF2043 /* SampleViews.swift */; };
+		9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D009288969CC00DF2043 /* CustomizeViews.swift */; };
+		9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D00B288969E000DF2043 /* AppleTutorials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		9A50836C283D1BD2006C0793 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		9A50836E283D297C006C0793 /* UserViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDetail.swift; sourceTree = "<group>"; };
 		9AD8D0062889677A00DF2043 /* SampleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViews.swift; sourceTree = "<group>"; };
+		9AD8D009288969CC00DF2043 /* CustomizeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeViews.swift; sourceTree = "<group>"; };
+		9AD8D00B288969E000DF2043 /* AppleTutorials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTutorials.swift; sourceTree = "<group>"; };
 		C7FB295F55644F5107E49099 /* Pods-swiftui-learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-learning.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-learning/Pods-swiftui-learning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 		9A2A0409283CBECD00148686 /* swiftui-learning */ = {
 			isa = PBXGroup;
 			children = (
+				9AD8D008288969AC00DF2043 /* AppleTutorial */,
 				9A2A041F283D053500148686 /* Features */,
 				9A2A041B283CFD7800148686 /* View */,
 				9A2A040A283CBECD00148686 /* swiftui_learningApp.swift */,
@@ -141,6 +146,15 @@
 				9A50836E283D297C006C0793 /* UserViewDetail.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		9AD8D008288969AC00DF2043 /* AppleTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				9AD8D009288969CC00DF2043 /* CustomizeViews.swift */,
+				9AD8D00B288969E000DF2043 /* AppleTutorials.swift */,
+			);
+			path = AppleTutorial;
 			sourceTree = "<group>";
 		};
 		B81C1C350CDD18A36CA96653 /* Frameworks */ = {
@@ -257,8 +271,10 @@
 				9A50836A283D1BC0006C0793 /* NavigationUsers.swift in Sources */,
 				9A2A0421283D054200148686 /* SampleList.swift in Sources */,
 				9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */,
+				9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */,
 				9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */,
 				9A2A041E283CFDCA00148686 /* CircleTextImage.swift in Sources */,
+				9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */,
 				9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */,
 				9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */,
 			);
