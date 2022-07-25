@@ -10,10 +10,13 @@ import Kingfisher
 
 struct CircleImage: View {
 
-    fileprivate let imageUrl = "https://picsum.photos/id/237/200/300"
+    // fileprivate let imageUrl = "https://picsum.photos/id/237/200/300"
+
+    var image: Image
+
     var body: some View {
 
-        KFImage(URL(string: imageUrl))
+        image
             .clipShape(Circle())
             .overlay{
                 Circle().stroke(.gray, lineWidth: 4)
@@ -25,6 +28,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage()
+        CircleImage(image: Image("turtlerock"))
     }
 }

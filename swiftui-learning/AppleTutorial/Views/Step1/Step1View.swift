@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct Step1View: View {
     var body: some View {
         VStack{
-            Mapview()
+            Mapview(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
-            CircleImage()
+            CircleImage(image: Image("turtlerock"))
                 .offset(y: -150)
                 .padding(.bottom, -170)
 

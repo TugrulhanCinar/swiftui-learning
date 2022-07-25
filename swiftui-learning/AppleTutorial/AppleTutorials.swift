@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppleTutorials: View {
     var body: some View {
-        Step1View()
+        Step2View()
     }
 }
 
