@@ -16,6 +16,8 @@
 		9A1E150A288E8A6A00118B1D /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1507288E868700118B1D /* landmarkData.json */; };
 		9A1E1523288E8CAC00118B1D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1522288E8CAC00118B1D /* LandmarkList.swift */; };
 		9A1E1525288EAE8C00118B1D /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1524288EAE8C00118B1D /* LandmarkDetail.swift */; };
+		9A1E1528288EBAC700118B1D /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1527288EBAC700118B1D /* CustomTabView.swift */; };
+		9A1E152B288EBB0A00118B1D /* VeliBacikView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E152A288EBB0A00118B1D /* VeliBacikView.swift */; };
 		9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A040A283CBECD00148686 /* swiftui_learningApp.swift */; };
 		9A2A040D283CBECD00148686 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A040C283CBECD00148686 /* ContentView.swift */; };
 		9A2A040F283CBED000148686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2A040E283CBED000148686 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		9A1E1508288E87CF00118B1D /* Step2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2View.swift; sourceTree = "<group>"; };
 		9A1E1522288E8CAC00118B1D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		9A1E1524288EAE8C00118B1D /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		9A1E1527288EBAC700118B1D /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		9A1E152A288EBB0A00118B1D /* VeliBacikView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeliBacikView.swift; sourceTree = "<group>"; };
 		9A2A0407283CBECD00148686 /* swiftui-learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2A040A283CBECD00148686 /* swiftui_learningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_learningApp.swift; sourceTree = "<group>"; };
 		9A2A040C283CBECD00148686 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,22 @@
 			path = AppleTutorial;
 			sourceTree = "<group>";
 		};
+		9A1E1526288EBAB900118B1D /* CustomTabView */ = {
+			isa = PBXGroup;
+			children = (
+				9A1E1527288EBAC700118B1D /* CustomTabView.swift */,
+			);
+			path = CustomTabView;
+			sourceTree = "<group>";
+		};
+		9A1E1529288EBAD100118B1D /* SampleList */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A0420283D054200148686 /* SampleList.swift */,
+			);
+			path = SampleList;
+			sourceTree = "<group>";
+		};
 		9A2A03FE283CBECD00148686 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +147,7 @@
 			children = (
 				9A1E1505288E866A00118B1D /* Resources */,
 				9AD8D008288969AC00DF2043 /* AppleTutorial */,
-				9A2A041F283D053500148686 /* Features */,
+				9A2A041F283D053500148686 /* VeliBacik */,
 				9A2A041B283CFD7800148686 /* View */,
 				9A2A040A283CBECD00148686 /* swiftui_learningApp.swift */,
 				9A2A040C283CBECD00148686 /* ContentView.swift */,
@@ -163,21 +183,15 @@
 			path = Circle;
 			sourceTree = "<group>";
 		};
-		9A2A041F283D053500148686 /* Features */ = {
+		9A2A041F283D053500148686 /* VeliBacik */ = {
 			isa = PBXGroup;
 			children = (
+				9A1E1529288EBAD100118B1D /* SampleList */,
+				9A1E1526288EBAB900118B1D /* CustomTabView */,
 				9A508368283D1B9F006C0793 /* Navigation */,
-				9A508365283D1802006C0793 /* ModelList */,
-				9A2A0420283D054200148686 /* SampleList.swift */,
+				9A1E152A288EBB0A00118B1D /* VeliBacikView.swift */,
 			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		9A508365283D1802006C0793 /* ModelList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ModelList;
+			path = VeliBacik;
 			sourceTree = "<group>";
 		};
 		9A508368283D1B9F006C0793 /* Navigation */ = {
@@ -351,6 +365,7 @@
 				9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */,
 				9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */,
 				9AD8D0112889886200DF2043 /* CircleImage.swift in Sources */,
+				9A1E1528288EBAC700118B1D /* CustomTabView.swift in Sources */,
 				9AD8D00E2889730000DF2043 /* LabelledDivider.swift in Sources */,
 				9AD8D01528898E0F00DF2043 /* Step1View.swift in Sources */,
 				9A1E1504288E85F300118B1D /* LanmarkRow.swift in Sources */,
@@ -360,6 +375,7 @@
 				9A1E1525288EAE8C00118B1D /* LandmarkDetail.swift in Sources */,
 				9A2A041E283CFDCA00148686 /* CircleTextImage.swift in Sources */,
 				9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */,
+				9A1E152B288EBB0A00118B1D /* VeliBacikView.swift in Sources */,
 				9A1E14FC288E826200118B1D /* ListAndNavigation.swift in Sources */,
 				9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */,
 				9AD8D01328898D2500DF2043 /* Mapview.swift in Sources */,
