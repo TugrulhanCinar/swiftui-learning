@@ -28,6 +28,7 @@
 		9A50836A283D1BC0006C0793 /* NavigationUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A508369283D1BC0006C0793 /* NavigationUsers.swift */; };
 		9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836C283D1BD2006C0793 /* NavigationModel.swift */; };
 		9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836E283D297C006C0793 /* UserViewDetail.swift */; };
+		9AB43B282892AD620005F93A /* CustomTabbarIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB43B272892AD620005F93A /* CustomTabbarIndex.swift */; };
 		9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D0062889677A00DF2043 /* SampleViews.swift */; };
 		9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D009288969CC00DF2043 /* CustomizeViews.swift */; };
 		9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D00B288969E000DF2043 /* AppleTutorials.swift */; };
@@ -60,6 +61,7 @@
 		9A508369283D1BC0006C0793 /* NavigationUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUsers.swift; sourceTree = "<group>"; };
 		9A50836C283D1BD2006C0793 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		9A50836E283D297C006C0793 /* UserViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDetail.swift; sourceTree = "<group>"; };
+		9AB43B272892AD620005F93A /* CustomTabbarIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarIndex.swift; sourceTree = "<group>"; };
 		9AD8D0062889677A00DF2043 /* SampleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViews.swift; sourceTree = "<group>"; };
 		9AD8D009288969CC00DF2043 /* CustomizeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeViews.swift; sourceTree = "<group>"; };
 		9AD8D00B288969E000DF2043 /* AppleTutorials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTutorials.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9A1E1527288EBAC700118B1D /* CustomTabView.swift */,
+				9AB43B272892AD620005F93A /* CustomTabbarIndex.swift */,
 			);
 			path = CustomTabView;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				9A1E1525288EAE8C00118B1D /* LandmarkDetail.swift in Sources */,
 				9A2A041E283CFDCA00148686 /* CircleTextImage.swift in Sources */,
 				9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */,
+				9AB43B282892AD620005F93A /* CustomTabbarIndex.swift in Sources */,
 				9A1E152B288EBB0A00118B1D /* VeliBacikView.swift in Sources */,
 				9A1E14FC288E826200118B1D /* ListAndNavigation.swift in Sources */,
 				9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */,
