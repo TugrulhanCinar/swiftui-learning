@@ -33,6 +33,12 @@
 		9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836C283D1BD2006C0793 /* NavigationModel.swift */; };
 		9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50836E283D297C006C0793 /* UserViewDetail.swift */; };
 		9AB43B282892AD620005F93A /* CustomTabbarIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB43B272892AD620005F93A /* CustomTabbarIndex.swift */; };
+		9ABBF8BE2897EC6100789F8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBF8BD2897EC6100789F8B /* User.swift */; };
+		9ABBF8C02897EC9E00789F8B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBF8BF2897EC9E00789F8B /* UserService.swift */; };
+		9ABBF8C42897EE7700789F8B /* Logging+AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBF8C32897EE7700789F8B /* Logging+AFError.swift */; };
+		9ABBF8C72897F04800789F8B /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 9ABBF8C62897F04800789F8B /* Logging */; };
+		9ABBF8C92897F24A00789F8B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBF8C82897F24A00789F8B /* UserViewModel.swift */; };
+		9ABBF8CD2897F35F00789F8B /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBF8CC2897F35F00789F8B /* UserView.swift */; };
 		9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D0062889677A00DF2043 /* SampleViews.swift */; };
 		9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D009288969CC00DF2043 /* CustomizeViews.swift */; };
 		9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D00B288969E000DF2043 /* AppleTutorials.swift */; };
@@ -76,6 +82,11 @@
 		9A50836C283D1BD2006C0793 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		9A50836E283D297C006C0793 /* UserViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDetail.swift; sourceTree = "<group>"; };
 		9AB43B272892AD620005F93A /* CustomTabbarIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarIndex.swift; sourceTree = "<group>"; };
+		9ABBF8BD2897EC6100789F8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9ABBF8BF2897EC9E00789F8B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9ABBF8C32897EE7700789F8B /* Logging+AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logging+AFError.swift"; sourceTree = "<group>"; };
+		9ABBF8C82897F24A00789F8B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		9ABBF8CC2897F35F00789F8B /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		9AD8D0062889677A00DF2043 /* SampleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViews.swift; sourceTree = "<group>"; };
 		9AD8D009288969CC00DF2043 /* CustomizeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeViews.swift; sourceTree = "<group>"; };
 		9AD8D00B288969E000DF2043 /* AppleTutorials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTutorials.swift; sourceTree = "<group>"; };
@@ -99,6 +110,7 @@
 				9A2A041A283CFA9100148686 /* Kingfisher in Frameworks */,
 				9ADEDB642897C2A000CC5BF3 /* ActivityIndicatorView in Frameworks */,
 				767411EFCD8771CFA760572E /* Pods_swiftui_learning.framework in Frameworks */,
+				9ABBF8C72897F04800789F8B /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +221,8 @@
 		9A2A041F283D053500148686 /* VeliBacik */ = {
 			isa = PBXGroup;
 			children = (
+				9ABBF8C12897EE5800789F8B /* Core */,
+				9ABBF8B82897EBC700789F8B /* RegResView */,
 				9ADEDB512897B67200CC5BF3 /* FoxViewModel */,
 				9A4E667F2893D38C003F27E7 /* Environment */,
 				9A1E1529288EBAD100118B1D /* SampleList */,
@@ -252,6 +266,65 @@
 				9A1E1524288EAE8C00118B1D /* LandmarkDetail.swift */,
 			);
 			path = Step2;
+			sourceTree = "<group>";
+		};
+		9ABBF8B82897EBC700789F8B /* RegResView */ = {
+			isa = PBXGroup;
+			children = (
+				9ABBF8BC2897EC1B00789F8B /* Service */,
+				9ABBF8BB2897EC1200789F8B /* Model */,
+				9ABBF8BA2897EBF600789F8B /* View */,
+				9ABBF8B92897EBF300789F8B /* ViewModel */,
+			);
+			path = RegResView;
+			sourceTree = "<group>";
+		};
+		9ABBF8B92897EBF300789F8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9ABBF8C82897F24A00789F8B /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9ABBF8BA2897EBF600789F8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ABBF8CC2897F35F00789F8B /* UserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ABBF8BB2897EC1200789F8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9ABBF8BD2897EC6100789F8B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ABBF8BC2897EC1B00789F8B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9ABBF8BF2897EC9E00789F8B /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9ABBF8C12897EE5800789F8B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9ABBF8C22897EE5F00789F8B /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9ABBF8C22897EE5F00789F8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9ABBF8C32897EE7700789F8B /* Logging+AFError.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		9AD8D008288969AC00DF2043 /* AppleTutorial */ = {
@@ -355,6 +428,7 @@
 				9A2A0419283CFA9100148686 /* Kingfisher */,
 				9ADEDB5D2897BB9E00CC5BF3 /* Alamofire */,
 				9ADEDB632897C2A000CC5BF3 /* ActivityIndicatorView */,
+				9ABBF8C62897F04800789F8B /* Logging */,
 			);
 			productName = "swiftui-learning";
 			productReference = 9A2A0407283CBECD00148686 /* swiftui-learning.app */;
@@ -388,6 +462,7 @@
 				9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				9ADEDB5C2897BB9E00CC5BF3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9ADEDB622897C2A000CC5BF3 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				9ABBF8C52897F04800789F8B /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			productRefGroup = 9A2A0408283CBECD00148686 /* Products */;
 			projectDirPath = "";
@@ -447,6 +522,8 @@
 				9A2A0421283D054200148686 /* SampleList.swift in Sources */,
 				9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */,
 				9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */,
+				9ABBF8C02897EC9E00789F8B /* UserService.swift in Sources */,
+				9ABBF8C42897EE7700789F8B /* Logging+AFError.swift in Sources */,
 				9ADEDB612897BF3800CC5BF3 /* FoxViewModel.swift in Sources */,
 				9AD8D0112889886200DF2043 /* CircleImage.swift in Sources */,
 				9A1E1528288EBAC700118B1D /* CustomTabView.swift in Sources */,
@@ -457,6 +534,7 @@
 				9A4E66852893F41A003F27E7 /* DateControlView.swift in Sources */,
 				9A4E66812893D5B0003F27E7 /* EnviromentView.swift in Sources */,
 				9AD8D0072889677A00DF2043 /* SampleViews.swift in Sources */,
+				9ABBF8CD2897F35F00789F8B /* UserView.swift in Sources */,
 				9A1E1509288E87CF00118B1D /* Step2View.swift in Sources */,
 				9A1E14FE288E829600118B1D /* LandmarkModel.swift in Sources */,
 				9A1E1525288EAE8C00118B1D /* LandmarkDetail.swift in Sources */,
@@ -464,6 +542,7 @@
 				9ADEDB5F2897BD7E00CC5BF3 /* FoxModel.swift in Sources */,
 				9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */,
 				9ADEDB572897B7EC00CC5BF3 /* RandomFoxView.swift in Sources */,
+				9ABBF8C92897F24A00789F8B /* UserViewModel.swift in Sources */,
 				9AB43B282892AD620005F93A /* CustomTabbarIndex.swift in Sources */,
 				9A1E152B288EBB0A00118B1D /* VeliBacikView.swift in Sources */,
 				9A1E14FC288E826200118B1D /* ListAndNavigation.swift in Sources */,
@@ -473,6 +552,7 @@
 				9AD8D01328898D2500DF2043 /* Mapview.swift in Sources */,
 				9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */,
 				9A1E1523288E8CAC00118B1D /* LandmarkList.swift in Sources */,
+				9ABBF8BE2897EC6100789F8B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +763,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		9ABBF8C52897F04800789F8B /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		9ADEDB5C2897BB9E00CC5BF3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -706,6 +794,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9ABBF8C62897F04800789F8B /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ABBF8C52897F04800789F8B /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
 		};
 		9ADEDB5D2897BB9E00CC5BF3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

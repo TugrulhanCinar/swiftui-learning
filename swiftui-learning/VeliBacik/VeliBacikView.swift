@@ -11,7 +11,8 @@ struct VeliBacikView: View {
     var body: some View {
         // CustomTabView()
         // EnviromentView()
-        RandomFoxView()
+        // RandomFoxView()
+        UserView()
     }
 }
 
