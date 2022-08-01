@@ -10,7 +10,8 @@ import SwiftUI
 struct VeliBacikView: View {
     var body: some View {
         // CustomTabView()
-        EnviromentView()
+        // EnviromentView()
+        RandomFoxView()
     }
 }
 

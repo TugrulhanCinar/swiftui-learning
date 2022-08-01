@@ -40,6 +40,12 @@
 		9AD8D0112889886200DF2043 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D0102889886200DF2043 /* CircleImage.swift */; };
 		9AD8D01328898D2500DF2043 /* Mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D01228898D2500DF2043 /* Mapview.swift */; };
 		9AD8D01528898E0F00DF2043 /* Step1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8D01428898E0F00DF2043 /* Step1View.swift */; };
+		9ADEDB572897B7EC00CC5BF3 /* RandomFoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEDB562897B7EC00CC5BF3 /* RandomFoxView.swift */; };
+		9ADEDB5B2897BB0E00CC5BF3 /* FoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEDB5A2897BB0E00CC5BF3 /* FoxService.swift */; };
+		9ADEDB5E2897BB9E00CC5BF3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9ADEDB5D2897BB9E00CC5BF3 /* Alamofire */; };
+		9ADEDB5F2897BD7E00CC5BF3 /* FoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEDB582897BA8D00CC5BF3 /* FoxModel.swift */; };
+		9ADEDB612897BF3800CC5BF3 /* FoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEDB602897BF3800CC5BF3 /* FoxViewModel.swift */; };
+		9ADEDB642897C2A000CC5BF3 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 9ADEDB632897C2A000CC5BF3 /* ActivityIndicatorView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +83,10 @@
 		9AD8D0102889886200DF2043 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		9AD8D01228898D2500DF2043 /* Mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapview.swift; sourceTree = "<group>"; };
 		9AD8D01428898E0F00DF2043 /* Step1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1View.swift; sourceTree = "<group>"; };
+		9ADEDB562897B7EC00CC5BF3 /* RandomFoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFoxView.swift; sourceTree = "<group>"; };
+		9ADEDB582897BA8D00CC5BF3 /* FoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxModel.swift; sourceTree = "<group>"; };
+		9ADEDB5A2897BB0E00CC5BF3 /* FoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxService.swift; sourceTree = "<group>"; };
+		9ADEDB602897BF3800CC5BF3 /* FoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxViewModel.swift; sourceTree = "<group>"; };
 		C7FB295F55644F5107E49099 /* Pods-swiftui-learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-learning.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-learning/Pods-swiftui-learning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADEDB5E2897BB9E00CC5BF3 /* Alamofire in Frameworks */,
 				9A2A041A283CFA9100148686 /* Kingfisher in Frameworks */,
+				9ADEDB642897C2A000CC5BF3 /* ActivityIndicatorView in Frameworks */,
 				767411EFCD8771CFA760572E /* Pods_swiftui_learning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +209,7 @@
 		9A2A041F283D053500148686 /* VeliBacik */ = {
 			isa = PBXGroup;
 			children = (
+				9ADEDB512897B67200CC5BF3 /* FoxViewModel */,
 				9A4E667F2893D38C003F27E7 /* Environment */,
 				9A1E1529288EBAD100118B1D /* SampleList */,
 				9A1E1526288EBAB900118B1D /* CustomTabView */,
@@ -270,6 +283,49 @@
 			path = Step1;
 			sourceTree = "<group>";
 		};
+		9ADEDB512897B67200CC5BF3 /* FoxViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9ADEDB552897B7AB00CC5BF3 /* Model */,
+				9ADEDB542897B79600CC5BF3 /* Service */,
+				9ADEDB532897B78E00CC5BF3 /* ViewModel */,
+				9ADEDB522897B77F00CC5BF3 /* View */,
+			);
+			path = FoxViewModel;
+			sourceTree = "<group>";
+		};
+		9ADEDB522897B77F00CC5BF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ADEDB562897B7EC00CC5BF3 /* RandomFoxView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ADEDB532897B78E00CC5BF3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9ADEDB602897BF3800CC5BF3 /* FoxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9ADEDB542897B79600CC5BF3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9ADEDB5A2897BB0E00CC5BF3 /* FoxService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9ADEDB552897B7AB00CC5BF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9ADEDB582897BA8D00CC5BF3 /* FoxModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B81C1C350CDD18A36CA96653 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +353,8 @@
 			name = "swiftui-learning";
 			packageProductDependencies = (
 				9A2A0419283CFA9100148686 /* Kingfisher */,
+				9ADEDB5D2897BB9E00CC5BF3 /* Alamofire */,
+				9ADEDB632897C2A000CC5BF3 /* ActivityIndicatorView */,
 			);
 			productName = "swiftui-learning";
 			productReference = 9A2A0407283CBECD00148686 /* swiftui-learning.app */;
@@ -328,6 +386,8 @@
 			mainGroup = 9A2A03FE283CBECD00148686;
 			packageReferences = (
 				9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9ADEDB5C2897BB9E00CC5BF3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9ADEDB622897C2A000CC5BF3 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = 9A2A0408283CBECD00148686 /* Products */;
 			projectDirPath = "";
@@ -387,6 +447,7 @@
 				9A2A0421283D054200148686 /* SampleList.swift in Sources */,
 				9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */,
 				9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */,
+				9ADEDB612897BF3800CC5BF3 /* FoxViewModel.swift in Sources */,
 				9AD8D0112889886200DF2043 /* CircleImage.swift in Sources */,
 				9A1E1528288EBAC700118B1D /* CustomTabView.swift in Sources */,
 				9A4E66872893F67D003F27E7 /* DateTime+Constant.swift in Sources */,
@@ -400,11 +461,14 @@
 				9A1E14FE288E829600118B1D /* LandmarkModel.swift in Sources */,
 				9A1E1525288EAE8C00118B1D /* LandmarkDetail.swift in Sources */,
 				9A2A041E283CFDCA00148686 /* CircleTextImage.swift in Sources */,
+				9ADEDB5F2897BD7E00CC5BF3 /* FoxModel.swift in Sources */,
 				9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */,
+				9ADEDB572897B7EC00CC5BF3 /* RandomFoxView.swift in Sources */,
 				9AB43B282892AD620005F93A /* CustomTabbarIndex.swift in Sources */,
 				9A1E152B288EBB0A00118B1D /* VeliBacikView.swift in Sources */,
 				9A1E14FC288E826200118B1D /* ListAndNavigation.swift in Sources */,
 				9A4E66832893ED56003F27E7 /* Spacer+Constant.swift in Sources */,
+				9ADEDB5B2897BB0E00CC5BF3 /* FoxService.swift in Sources */,
 				9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */,
 				9AD8D01328898D2500DF2043 /* Mapview.swift in Sources */,
 				9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */,
@@ -619,6 +683,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		9ADEDB5C2897BB9E00CC5BF3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9ADEDB622897C2A000CC5BF3 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -626,6 +706,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9A2A0418283CFA9100148686 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9ADEDB5D2897BB9E00CC5BF3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ADEDB5C2897BB9E00CC5BF3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9ADEDB632897C2A000CC5BF3 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ADEDB622897C2A000CC5BF3 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
