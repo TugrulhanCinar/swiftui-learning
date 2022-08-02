@@ -12,7 +12,8 @@ struct VeliBacikView: View {
         // CustomTabView()
         // EnviromentView()
         // RandomFoxView()
-        UserView()
+        // UserView()
+        MarketHomeView()
     }
 }
 
