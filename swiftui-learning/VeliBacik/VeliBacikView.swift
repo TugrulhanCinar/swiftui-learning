@@ -14,7 +14,8 @@ struct VeliBacikView: View {
         // RandomFoxView()
         // UserView()
         // MarketHomeView()
-        PropertyWrapperView()
+        // PropertyWrapperView()
+        Step15View()
     }
 }
 

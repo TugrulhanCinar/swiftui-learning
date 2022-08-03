@@ -11,7 +11,6 @@ import Foundation
 
     var wrappedValue: String {
         didSet {
-            print("gelen değer \(wrappedValue)  değişen değer \(calculateValue(value: wrappedValue))")
             wrappedValue = self.calculateValue(value: wrappedValue)
         }
     }

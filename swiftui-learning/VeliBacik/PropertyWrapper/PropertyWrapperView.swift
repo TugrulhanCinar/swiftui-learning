@@ -16,7 +16,6 @@ struct PropertyWrapperView: View {
                 .font(.largeTitle)
             TextField("", text: $userWrapperModel.lastName)
             TextField("Number", text: $userWrapperModel.age)
-
         }
     }
 }

@@ -12,6 +12,12 @@
 		9A13DA5F289A5F9C00170734 /* UserWrapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA5E289A5F9C00170734 /* UserWrapperModel.swift */; };
 		9A13DA61289A5FEA00170734 /* UpperCaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA60289A5FEA00170734 /* UpperCaseWrapper.swift */; };
 		9A13DA63289A626300170734 /* NumberCaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA62289A626300170734 /* NumberCaseWrapper.swift */; };
+		9A13DA66289A787000170734 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA65289A787000170734 /* TimerView.swift */; };
+		9A13DA68289A7C0700170734 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA67289A7C0700170734 /* Date+Format.swift */; };
+		9A13DA6A289A84A200170734 /* TextEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA69289A84A200170734 /* TextEditingView.swift */; };
+		9A13DA6C289A85A200170734 /* Step15View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA6B289A85A200170734 /* Step15View.swift */; };
+		9A13DA6E289A85FE00170734 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA6D289A85FE00170734 /* LabelView.swift */; };
+		9A13DA70289A87FD00170734 /* TabGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13DA6F289A87FD00170734 /* TabGestureView.swift */; };
 		9A1E14FC288E826200118B1D /* ListAndNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E14FB288E826200118B1D /* ListAndNavigation.swift */; };
 		9A1E14FE288E829600118B1D /* LandmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E14FD288E829600118B1D /* LandmarkModel.swift */; };
 		9A1E1500288E857700118B1D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E14FF288E857700118B1D /* ModelData.swift */; };
@@ -71,6 +77,12 @@
 		9A13DA5E289A5F9C00170734 /* UserWrapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWrapperModel.swift; sourceTree = "<group>"; };
 		9A13DA60289A5FEA00170734 /* UpperCaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperCaseWrapper.swift; sourceTree = "<group>"; };
 		9A13DA62289A626300170734 /* NumberCaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCaseWrapper.swift; sourceTree = "<group>"; };
+		9A13DA65289A787000170734 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		9A13DA67289A7C0700170734 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		9A13DA69289A84A200170734 /* TextEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditingView.swift; sourceTree = "<group>"; };
+		9A13DA6B289A85A200170734 /* Step15View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step15View.swift; sourceTree = "<group>"; };
+		9A13DA6D289A85FE00170734 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		9A13DA6F289A87FD00170734 /* TabGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGestureView.swift; sourceTree = "<group>"; };
 		9A1E14FB288E826200118B1D /* ListAndNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAndNavigation.swift; sourceTree = "<group>"; };
 		9A1E14FD288E829600118B1D /* LandmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkModel.swift; sourceTree = "<group>"; };
 		9A1E14FF288E857700118B1D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -155,6 +167,18 @@
 				9A13DA62289A626300170734 /* NumberCaseWrapper.swift */,
 			);
 			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		9A13DA64289A783900170734 /* Step15 */ = {
+			isa = PBXGroup;
+			children = (
+				9A13DA65289A787000170734 /* TimerView.swift */,
+				9A13DA69289A84A200170734 /* TextEditingView.swift */,
+				9A13DA6B289A85A200170734 /* Step15View.swift */,
+				9A13DA6D289A85FE00170734 /* LabelView.swift */,
+				9A13DA6F289A87FD00170734 /* TabGestureView.swift */,
+			);
+			path = Step15;
 			sourceTree = "<group>";
 		};
 		9A16362D2899093C00B8135D /* Market */ = {
@@ -261,6 +285,7 @@
 		9A2A041F283D053500148686 /* VeliBacik */ = {
 			isa = PBXGroup;
 			children = (
+				9A13DA64289A783900170734 /* Step15 */,
 				9A16362D2899093C00B8135D /* Market */,
 				9ABBF8C12897EE5800789F8B /* Core */,
 				9ABBF8B82897EBC700789F8B /* RegResView */,
@@ -366,6 +391,7 @@
 			children = (
 				9ABBF8C32897EE7700789F8B /* Logging+AFError.swift */,
 				9A33D0632899697E007C5DEA /* Navigation+View.swift */,
+				9A13DA67289A7C0700170734 /* Date+Format.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -608,8 +634,10 @@
 				9A50836A283D1BC0006C0793 /* NavigationUsers.swift in Sources */,
 				9A2A0421283D054200148686 /* SampleList.swift in Sources */,
 				9A2A040B283CBECD00148686 /* swiftui_learningApp.swift in Sources */,
+				9A13DA66289A787000170734 /* TimerView.swift in Sources */,
 				9AD8D00C288969E000DF2043 /* AppleTutorials.swift in Sources */,
 				9ABBF8C02897EC9E00789F8B /* UserService.swift in Sources */,
+				9A13DA6E289A85FE00170734 /* LabelView.swift in Sources */,
 				9ABBF8C42897EE7700789F8B /* Logging+AFError.swift in Sources */,
 				9A33D0642899697E007C5DEA /* Navigation+View.swift in Sources */,
 				9ADEDB612897BF3800CC5BF3 /* FoxViewModel.swift in Sources */,
@@ -631,19 +659,23 @@
 				9A1E1525288EAE8C00118B1D /* LandmarkDetail.swift in Sources */,
 				9A2A041E283CFDCA00148686 /* CircleTextImage.swift in Sources */,
 				9ADEDB5F2897BD7E00CC5BF3 /* FoxModel.swift in Sources */,
+				9A13DA68289A7C0700170734 /* Date+Format.swift in Sources */,
 				9AD8D00A288969CC00DF2043 /* CustomizeViews.swift in Sources */,
 				9A13DA5D289A5F5F00170734 /* PropertyWrapperView.swift in Sources */,
+				9A13DA6C289A85A200170734 /* Step15View.swift in Sources */,
 				9ADEDB572897B7EC00CC5BF3 /* RandomFoxView.swift in Sources */,
 				9A33D06228996685007C5DEA /* MarketDetailViewModel.swift in Sources */,
 				9ABBF8C92897F24A00789F8B /* UserViewModel.swift in Sources */,
 				9AB43B282892AD620005F93A /* CustomTabbarIndex.swift in Sources */,
 				9A1E152B288EBB0A00118B1D /* VeliBacikView.swift in Sources */,
 				9A1E14FC288E826200118B1D /* ListAndNavigation.swift in Sources */,
+				9A13DA70289A87FD00170734 /* TabGestureView.swift in Sources */,
 				9A4E66832893ED56003F27E7 /* Spacer+Constant.swift in Sources */,
 				9ADEDB5B2897BB0E00CC5BF3 /* FoxService.swift in Sources */,
 				9A50836F283D297D006C0793 /* UserViewDetail.swift in Sources */,
 				9AD8D01328898D2500DF2043 /* Mapview.swift in Sources */,
 				9A50836D283D1BD2006C0793 /* NavigationModel.swift in Sources */,
+				9A13DA6A289A84A200170734 /* TextEditingView.swift in Sources */,
 				9A13DA61289A5FEA00170734 /* UpperCaseWrapper.swift in Sources */,
 				9AD888F72899479B00DF0B90 /* MarketHomeView.swift in Sources */,
 				9A13DA63289A626300170734 /* NumberCaseWrapper.swift in Sources */,
