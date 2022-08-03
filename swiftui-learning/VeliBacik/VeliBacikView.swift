@@ -13,7 +13,8 @@ struct VeliBacikView: View {
         // EnviromentView()
         // RandomFoxView()
         // UserView()
-        MarketHomeView()
+        // MarketHomeView()
+        PropertyWrapperView()
     }
 }
 
