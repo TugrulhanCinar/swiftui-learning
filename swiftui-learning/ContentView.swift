@@ -25,7 +25,7 @@ struct IconFieldView: View {
 struct ContentView: View {
 
     var body: some View {
-        AppleTutorials()
+        VeliBacikView()
     }
 }
 struct ContentView_Previews: PreviewProvider {
