@@ -1,38 +1,39 @@
 //
-//  FacebookButton.swift
+//  EmailButton.swift
 //  SnackOverFlow
 //
-//  Created by Tuğrul on 26.10.2022.
+//  Created by Tuğrul on 16.11.2022.
 //
 
 import SwiftUI
 
-struct FacebookButton: View {
+struct EmailButton: View {
     
     var onTap: () -> Void
-    
+
     var body: some View {
         Button {
             onTap()
         } label: {
             HStack {
-                Image(IconItems.Social.facebook.rawValue)
-                Text(LocaleKeys.Auth.facebook.rawValue.locale())
+                Spacer()
+                Text(LocaleKeys.Auth.custom.rawValue.locale())
                 Spacer()
             }
             .tint(.white)
             .padding(.all, PagePaddings.All.normal.rawValue)
-            .font(.title2)
+            .font(.system(size: FontSizes.headline, weight: .semibold))
+            .bold(true)
         }
         .buttonBorderShape(.roundedRectangle)
         .controlSize(.large)
-        .background(Color.deepSkyBlue)
+        .background(Color.peach)
         .cornerRadius(RadiusItem.radius)
     }
 }
 
-struct FacebookButton_Previews: PreviewProvider {
+struct EmailButton_Previews: PreviewProvider {
     static var previews: some View {
-        FacebookButton(onTap: {})
+        EmailButton(onTap: {})
     }
 }

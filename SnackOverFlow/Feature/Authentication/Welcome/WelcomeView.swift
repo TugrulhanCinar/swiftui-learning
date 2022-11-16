@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private enum StringItem: String {
+enum StringItem: String {
     
     case facebookLogin = "Sign In with Facebook"
 }
@@ -19,14 +19,7 @@ struct WelcomeView: View {
                 .resizable()
                 .statusBarHidden(true)
             Color.black.opacity(0.3)
-            VStack {
-                Image(Icons.appLogo.rawValue)
-                FacebookButton() {
-                    
-                }
-                    .padding(.top, 40)
-            }
-            .padding(.paddingAll)
+            BodyView()
         }
     }
 }
@@ -34,5 +27,37 @@ struct WelcomeView: View {
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
+            .ignoresSafeArea(.all)
     }
 }
+
+private struct BodyView: View {
+    var body: some View {
+        GeometryReader { geometry in
+            VStack {
+                Spacer()
+                Image(Icons.appLogo.rawValue)
+                Spacer()
+                FacebookButton() {
+                    
+                }
+                    .padding(.top, PagePaddings.Horizontal.normal.rawValue)
+                GoogleButton { }
+                AppleButton { }
+                Divider()
+                    .background(Color.peach)
+                    .frame(
+                        width: geometry.dh(width: 0.6),
+                        height: DividerViewSize.normal).padding(.horizontal, PagePaddings.Horizontal.normal.rawValue
+                                                                
+                        )
+                EmailButton { }
+                Spacer().frame(height: geometry.dh(height: 0.1))
+            }
+                .padding(.paddingAll)
+        }
+        
+    }
+}
+
+

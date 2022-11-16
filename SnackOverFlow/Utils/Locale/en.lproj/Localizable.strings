@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  swiftui-learning
+
+  Created by Tuğrul on 16.11.2022.
+  
+*/
+"signInFacebook" = "Sign In with Facebook";
+"signInGoogle" = "Sign In with Google";
+"signInapple" = "Sign In with Apple";
+"signUpWithEmail" = "Sign up with Email";
