@@ -11,3 +11,5 @@ struct DividerViewSize {
     
     static let normal: Double = 2
 }
+
+

@@ -47,7 +47,7 @@ private struct BodyView: View {
                 Divider()
                     .background(Color.peach)
                     .frame(
-                        width: geometry.dh(width: 0.6),
+                        width: geometry.dw(width: 0.6),
                         height: DividerViewSize.normal).padding(.horizontal, PagePaddings.Horizontal.normal.rawValue
                                                                 
                         )

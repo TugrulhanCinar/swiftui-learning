@@ -8,5 +8,6 @@
 import Foundation
 
 struct FontSizes {
+    static let largeTitle: Double = 34
     static let headline: Double = 16 
 }

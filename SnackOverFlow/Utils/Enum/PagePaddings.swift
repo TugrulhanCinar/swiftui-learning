@@ -9,7 +9,7 @@ import Foundation
 
 struct PagePaddings {
     enum All: Double {
-        case normal = 16 
+        case normal = 16
     }
     
     enum Horizontal: Double {

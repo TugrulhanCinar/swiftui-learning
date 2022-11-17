@@ -19,7 +19,7 @@ extension GeometryProxy {
     /// Dynamic Width by device
     /// - Parameter width: Percent Value
     /// - Returns: Calvulated Value for device width
-    func dh(width: Double) -> Double {
+    func dw(width: Double) -> Double {
         return size.width * width
     }
 
