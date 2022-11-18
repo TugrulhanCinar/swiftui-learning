@@ -19,4 +19,6 @@ struct IconItems {
         case google = "ic_google"
         case apple = "ic_apple"
     }
+    static let mail: String = "ic_mail"
+    static let lock: String = "ic_lock"
 }
