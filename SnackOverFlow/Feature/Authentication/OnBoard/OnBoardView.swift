@@ -8,39 +8,52 @@
 import SwiftUI
 
 struct OnBoardView: View {
-    // 193 190 193
-    @State private var currentIndex: Int = 0
+    
+    @State var onBoardViewModel: OnboardViewModel = OnboardViewModel()
     
     var body: some View {
-        GeometryReader{ geometry in
-            VStack {
-                Spacer()
+        NavigationView {
+            GeometryReader{ geometry in
+                VStack {
+                    Spacer()
 
-                TabView(selection: $currentIndex) {
-                    ForEach(0...count(), id: \.self) { value in
-                        SliderCard(
-                            imageHeight: geometry.dh(height: 0.45),
-                            model: OnBoardModel.items[value]
-                        )
-                    }
-                }.tabViewStyle(.page(indexDisplayMode: .never))
-                    .frame(height: geometry.dh(height: 0.6))
-                
-                HStack{
-                    ForEach(0...count(), id: \.self) { index in
-                        IndicatorRectangle(
-                            width: geometry.dw(width: index == currentIndex ? 0.1 : 0.03)
-                        )
-                    }
-                }.frame(height: ViewHeightSize.indicator)
-                
-                NormalButton(title: LocaleKeys.Buttons.getStarted.rawValue) {
+                    TabView(selection: $onBoardViewModel.currentIndex) {
+                        ForEach(0...count(), id: \.self) { value in
+                            SliderCard(
+                                imageHeight: geometry.dh(height: 0.45),
+                                model: OnBoardModel.items[value]
+                            )
+                        }
+                    }.tabViewStyle(.page(indexDisplayMode: .never))
+                        .frame(height: geometry.dh(height: 0.6))
                     
+                    HStack{
+                        ForEach(0...count(), id: \.self) { index in
+                            if index == onBoardViewModel.currentIndex {
+                                IndicatorRectangle(width: geometry.dw(width: 0.09))
+                            } else {
+                                IndicatorRectangle(width: geometry.dw(width: 0.03))
+                            }
+                        }
+                    }.frame(height: ViewHeightSize.indicator)
+                    
+                    NavigationLink(isActive: $onBoardViewModel.isHomeRedirect) {
+                        WelcomeView()
+                            //.navigationBarHidden(true)
+                            .toolbar(.hidden)
+                            .statusBarHidden(true)
+                    } label: {
+                        NormalButton(title: LocaleKeys.Buttons.getStarted.rawValue) {
+                            onBoardViewModel.saveUserLoginAndRedirect()
+                        }.padding(.all, PagePaddings.All.normal.rawValue)
+                    }.onAppear {
+                        onBoardViewModel.checkUserFirstTime()
+                    }
                 }
-                .padding(.all, PagePaddings.All.normal.rawValue)
+                
             }
-            
         }
+       
     }
     
     /// Dummy list count

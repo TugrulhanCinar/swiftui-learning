@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		569538732934B72C001E4077 /* OnBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569538722934B72C001E4077 /* OnBoardViewModel.swift */; };
+		569538762934B8C8001E4077 /* UserCacheItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569538752934B8C8001E4077 /* UserCacheItems.swift */; };
 		5697697429092A6700FB805B /* SnackOverFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697697329092A6700FB805B /* SnackOverFlowApp.swift */; };
 		5697697629092A6700FB805B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697697529092A6700FB805B /* ContentView.swift */; };
 		5697697829092A6700FB805B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5697697729092A6700FB805B /* Assets.xcassets */; };
@@ -104,6 +106,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		569538722934B72C001E4077 /* OnBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewModel.swift; sourceTree = "<group>"; };
+		569538752934B8C8001E4077 /* UserCacheItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheItems.swift; sourceTree = "<group>"; };
 		5697697129092A6700FB805B /* SnackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5697697329092A6700FB805B /* SnackOverFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackOverFlowApp.swift; sourceTree = "<group>"; };
 		5697697529092A6700FB805B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -232,6 +236,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		569538742934B8B7001E4077 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				569538752934B8C8001E4077 /* UserCacheItems.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		5697697229092A6700FB805B /* SnackOverFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +269,7 @@
 		5697697F29092AFF00FB805B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				569538742934B8B7001E4077 /* Cache */,
 				56ECCFD0292779C100650F2E /* ViewModifiers */,
 				56DCA8D02925109C00BCBCE3 /* Fonts */,
 				56DCA8B8292507C000BCBCE3 /* Locale */,
@@ -366,6 +379,7 @@
 			children = (
 				56B82D4229263BAE00280984 /* OnBoardView.swift */,
 				56B82D462926455E00280984 /* OnBoardModel.swift */,
+				569538722934B72C001E4077 /* OnBoardViewModel.swift */,
 			);
 			path = OnBoard;
 			sourceTree = "<group>";
@@ -952,7 +966,9 @@
 				56DCA8C329250BD500BCBCE3 /* Custom+EdgeInsents.swift in Sources */,
 				56DCA8CC29250F6400BCBCE3 /* ViewSize.swift in Sources */,
 				56DCA8D2292510AD00BCBCE3 /* FontSizes.swift in Sources */,
+				569538732934B72C001E4077 /* OnBoardViewModel.swift in Sources */,
 				56DCA8C529250C1800BCBCE3 /* PagePaddings.swift in Sources */,
+				569538762934B8C8001E4077 /* UserCacheItems.swift in Sources */,
 				56B82D4529263EAB00280984 /* NormalButton.swift in Sources */,
 				56B82D4329263BAE00280984 /* OnBoardView.swift in Sources */,
 				5697698729092B9B00FB805B /* WelcomeView.swift in Sources */,
